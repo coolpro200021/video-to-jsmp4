@@ -78,7 +78,7 @@ def encode(filmName,videoName,resolutionMulti,fpsMulti,packetSize):
 
         if not success:
             print("Frame",str(totalFrameIterations),"failed to read")
-            continue
+            break
 
         if (totalFrameIterations) % fpsMultiReciprocal == 0:
 
